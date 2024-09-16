@@ -2,12 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @font-face {
-    font-family: 'Mercure';
-    src: url('~/assets/ABYM_Mercure_web/Mercure-Regular.woff2') format('woff2'),
-        url('~/assets/ABYM_Mercure_web/Mercure-Regular.woff') format('woff');
-    font-style: normal;
-} */
+@font-face {
+    font-family: 'C-Medium';
+    src: url('~/assets/Medium.woff2') format('woff2'),
+        url('~/assets/Medium.woff') format('woff');
+    /* font-style: normal; */
+}
+@font-face {
+    font-family: 'C-Light';
+    src: url('~/assets/Light.woff2') format('woff2'),
+        url('~/assets/Light.woff') format('woff');
+    /* font-style: normal; */
+}
 
 @layer base {
 
@@ -18,7 +24,10 @@
         /* min-height: 100%; */
         display:flex;
         flex-direction: column;
-        /* font-family: 'Mercure', 'Times New Roman', Times, serif; */
+        font-family: 'C-Medium', 'Arial', sans-serif;
+    }
+    .serif {
+        @apply font-['C-Light'];
     }
 
     .t-xl {
@@ -26,7 +35,7 @@
     }
 
     .t-base {
-        @apply text-[1.5rem] leading-[1.785rem] md:text-[2.5rem] md:leading-[2.975rem] tracking-[-0.05em];
+        @apply text-[1.5rem] leading-[1.785rem] md:text-[2.5rem] md:leading-[2.975rem] tracking-[-0.03em];
     }
 
 }

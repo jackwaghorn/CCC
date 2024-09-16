@@ -24,9 +24,9 @@ function scrollTop() {
     <!-- Centre banner -->
     <section class="w-full md:min-h-screen h-full flex items-center justify-center banner">
       <div class="banner-text py-10 md:py-0">
-        <h1 class="t-xl text-center">
-          Centro per le Culture </h1>
-        <h1 class="t-xl font-bold text-center">Contemporanee</h1>
+        <div class="t-xl tracking-[0px] text-center serif">
+          Centro per le Culture </div>
+        <h1 class="t-xl font-normal text-center">Contemporanee</h1>
       </div>
     </section>
     <!-- Text -->
@@ -57,16 +57,16 @@ function scrollTop() {
         <div
           class="w-full border-purple border rounded-[25px] p-4 bg-purple bg-opacity-20 text-[#CEA1F3] t-base text-center">
           <p>
-            <span>Indirizzo</span> <br>
+            <span class="serif">Indirizzo</span> <br>
             3200 Campo de le Gate <br>
             Venezia 30122 (VE),<br>
             Italia
             <br><br>
-            <span>Contatti</span><br>
+            <span class="serif">Contatti</span><br>
             email@email.com<br>
             P.IVA / CF: XXXXXXXXXXX
             <br><br>
-            <span>Orari</span><br>
+            <span class="serif">Orari</span><br>
             Lun–Ven 9:30–18:30
           </p>
 
@@ -74,8 +74,7 @@ function scrollTop() {
       </div>
     </section>
     <!-- Scroll to top -->
-    <section
-    @click="scrollTop"
+    <section @click="scrollTop"
       class="w-full mt-4 border md:hidden block border-green bg-green bg-opacity-10 text-green p-4 rounded-[25px] t-base text-center ">
       Torna su
     </section>
