@@ -1,0 +1,110 @@
+<script setup>
+function scrollTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
+</script>
+<template>
+  <Html>
+  <Title>CCC</Title>
+  <!-- <Meta name="description" :content="page?.data?.meta_description" /> -->
+  </Html>
+
+
+
+  <main class="p-4 w-full h-full flex flex-col justify-start items-center">
+    <!-- Top banner -->
+    <section class="border  border-green rounded-[25px] bg-green bg-opacity-10 w-full py-2 px-1">
+      <h1 class="text-center t-base text-green">
+        CCC è un’associazione culturale no-profit. Questa è una bacheca digitale.
+      </h1>
+    </section>
+    <!-- Centre banner -->
+    <section class="w-full md:min-h-screen h-full flex items-center justify-center banner">
+      <div class="banner-text py-10 md:py-0">
+        <h1 class="t-xl text-center">
+          Centro per le Culture </h1>
+        <h1 class="t-xl font-bold text-center">Contemporanee</h1>
+      </div>
+    </section>
+    <!-- Text -->
+    <section class="w-full gap grid grid-cols-1 md:grid-cols-2 gap-4">
+      <!-- Column one -->
+      <div>
+        <div
+          class="w-full border-purple border rounded-[25px] p-4 bg-purple bg-opacity-20 text-[#CEA1F3] t-base text-center">
+          <p>Il Centro per le Culture Contemporanee (CCC) è una nuova associazione culturale nel panorama Veneto e
+            italiano, nata con l’obiettivo di promuovere progetti no-profit volti a ispirare, supportare e collegare
+            tanto
+            gli attori del panorama culturale quanto le realtà imprenditoriali italiane.
+            <br><br>
+            Le sue attività si articolano su più livelli, coniugando grandi progetti istituzionali, iniziative che
+            esplorano culture dal basso, e rispondendo alle urgenze culturali emergenti. Il CCC ha come finalità
+            principale la promozione e l’analisi della cultura contemporanea in tutte le sue forme, stimolare il dialogo
+            interdisciplinare, mantenendo un legame con la comunità locale e uno sguardo internazionale.
+            <br><br>
+            La sua missione è quella di sciogliere e ricomporre il ricco tessuto industriale e imprenditoriale della
+            regione Veneto, dimostrando come la cultura possa essere non solo un elemento di coesione, ma anche una
+            forza
+            capace di guidare l’innovazione nel pensiero e nelle azioni.
+          </p>
+        </div>
+      </div>
+      <!-- Column two -->
+      <div>
+        <div
+          class="w-full border-purple border rounded-[25px] p-4 bg-purple bg-opacity-20 text-[#CEA1F3] t-base text-center">
+          <p>
+            <span>Indirizzo</span> <br>
+            3200 Campo de le Gate <br>
+            Venezia 30122 (VE),<br>
+            Italia
+            <br><br>
+            <span>Contatti</span><br>
+            email@email.com<br>
+            P.IVA / CF: XXXXXXXXXXX
+            <br><br>
+            <span>Orari</span><br>
+            Lun–Ven 9:30–18:30
+          </p>
+
+        </div>
+      </div>
+    </section>
+    <!-- Scroll to top -->
+    <section
+    @click="scrollTop"
+      class="w-full mt-4 border md:hidden block border-green bg-green bg-opacity-10 text-green p-4 rounded-[25px] t-base text-center ">
+      Torna su
+    </section>
+  </main>
+</template>
+<style>
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 200px; */
+}
+
+.banner-text {
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .banner {
+    height: auto;
+    /* Let the container adjust to text height */
+  }
+
+  .banner-text {
+    writing-mode: vertical-rl;
+    /* Makes text vertical */
+    text-orientation: mixed;
+    /* Ensures the text is upright */
+  }
+}
+
+</style>
