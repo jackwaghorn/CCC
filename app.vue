@@ -16,25 +16,27 @@ function scrollTop() {
 
   <main class="p-4 w-full h-full flex flex-col justify-start items-center">
     <!-- Top banner -->
-    <section class="border  border-green rounded-[25px] bg-green bg-opacity-10 w-full py-2 px-1">
+    <section
+      class="fixed z-10 top-0 left-0 ms-4 mt-4 w-[calc(100%-2rem)] border  border-green rounded-[25px] bg-[#E6F7E5] py-2 px-1">
       <h1 class="text-center t-base text-green">
         CCC è un’associazione culturale no-profit. Questa è una bacheca digitale.
       </h1>
     </section>
     <!-- Centre banner -->
-    <section class="w-full md:min-h-screen h-full flex items-center justify-center banner">
+    <section class="w-full top-20 md:top-0 fixed md:min-h-screen h-full flex items-center justify-center banner">
       <div class="banner-text py-10 md:py-0">
         <div class="t-xl tracking-[0px] text-center serif">
           Centro per le Culture </div>
         <h1 class="t-xl font-normal text-center">Contemporanee</h1>
       </div>
     </section>
+    <section class="w-full h-screen"></section>
     <!-- Text -->
     <section class="w-full gap grid grid-cols-1 md:grid-cols-2 gap-4">
       <!-- Column one -->
       <div>
         <div
-          class="w-full border-purple border rounded-[25px] p-4 bg-purple bg-opacity-20 text-[#CEA1F3] t-base text-center">
+          class="w-full relative  border-purple border rounded-[25px] p-4 bg-[#F2E6FC] text-[#CEA1F3] t-base text-center">
           <p>Il Centro per le Culture Contemporanee (CCC) è una nuova associazione culturale nel panorama Veneto e
             italiano, nata con l’obiettivo di promuovere progetti no-profit volti a ispirare, supportare e collegare
             tanto
@@ -55,7 +57,7 @@ function scrollTop() {
       <!-- Column two -->
       <div>
         <div
-          class="w-full border-purple border rounded-[25px] p-4 bg-purple bg-opacity-20 text-[#CEA1F3] t-base text-center">
+          class="w-full relative border-purple border rounded-[25px] p-4 bg-[#F2E6FC] text-[#CEA1F3] t-base text-center">
           <p>
             <span class="serif">Indirizzo</span> <br>
             3200 Campo de le Gate <br>
