@@ -8,22 +8,25 @@ function scrollTop() {
 }
 function movePosition(el) {
   let element = document.getElementById(el);
-  let header = document.getElementById('header');
-  let headerSize = header.offsetHeight + 32
-  let scrollby = window.innerHeight - (window.innerHeight * 0.1) - headerSize
-  element.scrollTo({
-    top: scrollby,
-    left: 0,
-    behavior: 'smooth'
-  });
+  if(element.scrollTop === 0) {
+    let header = document.getElementById('header');
+    let headerSize = header.offsetHeight + 32
+    let scrollby = window.innerHeight - (window.innerHeight * 0.1) - headerSize
+    element.scrollTo({
+      top: scrollby,
+      left: 0,
+      behavior: 'smooth'
+    });
+  } else {
+    element.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    });
+  }
+
 }
 
-onMounted(() => {
-  document.getElementById('col-one').addEventListener('scroll', function () {
-    let header = document.getElementById('col-one');
-    console.log(header.scrollTop)
-  })
-})
 
 </script>
 <template>
@@ -43,7 +46,7 @@ onMounted(() => {
       </h1>
     </section>
     <!-- Centre banner -->
-    <section class="w-full fixed md:min-h-screen h-full flex items-center justify-center banner">
+    <section class="w-full fixed min-h-screen h-full flex items-center justify-center banner">
       <div class="banner-text py-10 md:py-0">
         <div class="t-xl tracking-[0px] text-center serif">
           Centro per le Culture </div>
