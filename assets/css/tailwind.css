@@ -4,14 +4,14 @@
 
 @font-face {
     font-family: 'C-Medium';
-    src: url('~/assets/Medium.woff2') format('woff2'),
-        url('~/assets/Medium.woff') format('woff');
+    src: url('~/assets/css/Medium.woff2') format('woff2'),
+        url('~/assets/css/Medium.woff') format('woff');
     /* font-style: normal; */
 }
 @font-face {
     font-family: 'C-Light';
-    src: url('~/assets/Light.woff2') format('woff2'),
-        url('~/assets/Light.woff') format('woff');
+    src: url('~/assets/css/Light.woff2') format('woff2'),
+        url('~/assets/css/Light.woff') format('woff');
     /* font-style: normal; */
 }
 
@@ -35,7 +35,7 @@
     }
 
     .t-base {
-        @apply text-[1.5rem] leading-[1.785rem] md:text-[2.5rem] md:leading-[2.975rem] tracking-[-0.03em];
+        @apply text-[1.5rem] leading-[1.785rem] md:text-[2.5rem] md:leading-[2.975rem] tracking-[-0.0em];
     }
 
 }
