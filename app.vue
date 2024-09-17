@@ -113,11 +113,8 @@ function movePosition(el) {
               Italia
               <br><br>
               <span class="serif">Contatti</span><br>
-              email@email.com<br>
-              P.IVA / CF: XXXXXXXXXXX
-              <br><br>
-              <span class="serif">Orari</span><br>
-              Lun–Ven 9:30–18:30
+              info@c-c-c.xyz <br>
+              P.IVA/CF: 94106890273
             </p>
           </div>
         </div>
